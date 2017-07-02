@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on Blackburn Theme Demo</title>
-    <link>https://digspinat.github.io/blackburn/tags/hugo/</link>
+    <link>https://digspinat.github.io/black/tags/hugo/</link>
     <description>Recent content in Hugo on Blackburn Theme Demo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://digspinat.github.io/blackburn/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://digspinat.github.io/black/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Getting Started with Hugo</title>
-      <link>https://digspinat.github.io/blackburn/post/hugoisforlovers/</link>
+      <link>https://digspinat.github.io/black/post/hugoisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://digspinat.github.io/blackburn/post/hugoisforlovers/</guid>
+      <guid>https://digspinat.github.io/black/post/hugoisforlovers/</guid>
       <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at installing hugo
