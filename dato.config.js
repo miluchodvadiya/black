@@ -93,7 +93,6 @@ module.exports = (dato, root, i18n) => {
 
   // inside a "post" directory...
   root.directory("content/post", (dir) => {
-
     //console.log(dato);
     //console.log(dato.posts);
     // ...iterate over the "Blog post" records...
@@ -108,11 +107,16 @@ module.exports = (dato, root, i18n) => {
           categories: blogPost.categories,
           weight: blogPost.weight,
           date: blogPost.date,
-          test_field:blogPost.testField,
-        },
-        content: blogPost.content
+          header: blogPost.header.map(head => head.testPageTitle),
 
+        },
+        content: blogPost.content,
+        testfield:blogPost.testField,
       });
     });
   });
+// add {{ .Params.Testfield }} in post template to get the changes in layout directory
+
+
+
 }
