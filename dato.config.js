@@ -90,11 +90,24 @@ module.exports = (dato, root, i18n) => {
     }
   });*/
 
+//console.log(dato.itemsById);
+
+//console.log(i18n.availableLocales);
+
+
 
   // inside a "post" directory...
   root.directory("content/post", (dir) => {
     //console.log(dato);
     //console.log(dato.posts);
+
+    // iterate over all the available locales...
+    i18n.availableLocales.forEach((locale) => {
+
+      // switch to the nth locale
+      i18n.withLocale(locale, () => {
+
+
     // ...iterate over the "Blog post" records...
     dato.posts.forEach((blogPost) => {
     // To get the rich text of each post
@@ -110,10 +123,12 @@ module.exports = (dato, root, i18n) => {
           header: blogPost.header.map(head => head.testPageTitle),
 
         },
-        content: blogPost.content,
-        testfield:blogPost.testField,
+        content: blogPost.content+blogPost.testField,
+        
       });
     });
+  });
+ });
   });
 // add {{ .Params.Testfield }} in post template to get the changes in layout directory
 
